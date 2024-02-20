@@ -28,7 +28,7 @@ $(document).ready(function() {
         },
         invalidHandler: function(evento, validador) {
             let camposIncorretos = validador.numberOfInvalids();
-            alert(`Existe ${camposIncorretos} campos inválidos no formulário.`);
+            alert(`Existem ${camposIncorretos} campos inválidos no formulário.`);
         }
     })
 
