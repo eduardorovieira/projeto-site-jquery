@@ -1,0 +1,338 @@
+/*
+    font-family: "Kdam Thmor Pro", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+*/
+/*
+    font-family: "Fjalla One", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+*/
+
+:root{
+
+--Corclarapadrao: #F5F0F6;
+--Cor2: #284552;
+--Cor3: #142229;
+--Cor4: #eca72c;
+--Cor5: white;
+--Corbotoes: #14213d;
+--Corsombras: rgba(0, 0, 0, 0.635);
+--Cornewprice: #ef233c;
+
+
+
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    overflow-x: hidden;
+}
+
+body {
+    background-color: var(--Corclarapadrao);
+}
+
+img {
+    box-shadow: var(--Corsombras) 0px 3px 3px 0px;
+}
+
+#carrossel img {
+    height: 420px;
+}
+
+.container {
+    max-width: 1024px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+header > .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 4px;
+}
+
+header h1 {
+    font-size: 36px;
+    text-shadow: 0px 20px 7.5px 0px var(--Corclarapadrao); /* Não está funcionando */
+    font-family: "Kdam Thmor Pro", sans-serif;
+}
+
+section h2 {
+    font-family: "Kdam Thmor Pro", sans-serif;
+    font-size: 30px;
+}
+
+header {
+    background-color: var(--Cor2);
+    color: var(--Corclarapadrao);
+    padding-top: 10px;
+    font-family: "Kdam Thmor Pro", sans-serif;
+    font-style: italic;
+    position: sticky;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+
+nav {
+    background-color: var(--Cor3);
+    color: var(--Corclarapadrao);
+    padding: 8px 0;
+    display: none;
+}
+
+nav li {
+    display: inline;
+    list-style: none;
+    font-size: 14px;
+    font-weight: bold;
+    margin-right: 16px;
+    text-transform: uppercase;
+}
+
+nav li a {
+    color: var(--Corclarapadrao);
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.menu-hamburguer {
+    width: 50px;
+}
+
+.menu-hamburguer span{
+    height: 5px;
+    width: 60px;
+    display: block;
+    margin-bottom: 4px;
+    background-color: var(--Corclarapadrao);
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+.container-flex {
+    display: flex;
+}
+
+#sobre-a-loja-img {
+    max-width: 400px;
+    margin-right: 30px;
+    border-radius: 3px;
+}
+
+section {
+    padding: 48px 0;
+}
+
+section h2 {
+    margin-bottom: 16px;
+}
+
+section ul li {
+    background-color: var(--Cor5);
+    border-radius: 8px;
+    padding: 10px;
+    box-shadow: rgba(0, 0, 0, 0.47) 0px 1px 1px 0px;
+}
+
+.lista-veiculos li {
+    list-style: none;
+    max-width: 30%;
+    margin: 16px;  
+}
+
+.lista-veiculos li h3 {
+    margin: 16px 0;
+}
+
+.lista-veiculos li p {
+    margin: 10px 0;
+}
+
+.lista-veiculos li img {
+    max-width: 100%;
+    border-radius: 3px;
+}
+
+.lista-veiculos {
+    flex-wrap: wrap;
+}
+
+.item-central {
+    margin: 0 5%;
+}
+
+button {
+    background-color:var(--Corbotoes) ;
+    color: var(--Corclarapadrao);
+    font-size: 18px;
+    font-family: "Kdam Thmor Pro", sans-serif;
+    border-radius: 4px;
+    border: none;
+    padding: 6.5px 0px;
+    display: block;
+    width: 100%;
+    box-shadow: rgba(0, 0, 0, 0.47) 0px 1px 1px 0px;
+    cursor: pointer;
+}
+
+.price {
+    align-items: center;
+}
+
+.price p del {
+    margin-right: 12px;
+    font-size: 16px;
+    padding: 3px;
+}
+
+.price p strong {
+    font-size: 20px;
+    background-color: var(--Cornewprice);
+    border-radius: 4px;
+    padding: 3px;
+    color: var(--Corclarapadrao);
+}
+
+form {
+
+    width: 100%;
+}
+
+.form-campo {
+    margin-bottom: 16px;
+}
+
+label {
+    font-weight: bold;
+    display: block;
+    margin-bottom: 6px;
+    font-family: "Kdam Thmor Pro", sans-serif;
+    padding-left: 2px;
+    color: black;
+}
+
+.fale-conosco1 label {
+    padding-top: 30px;
+    font-size: 20px;
+    color: #edede9;
+    font-weight: 550;
+}
+
+.form-campo input, .form-campo textarea {
+    width: 400px;
+    display: block;
+    padding: 8px;
+    border-radius: 4px;
+    padding: 6.5px 0px;
+    box-shadow: rgba(0, 0, 0, 0.47) 0px 1px 1px 0px;
+}
+
+.form-campo input {
+    padding: 8px 0;
+}
+
+.form-campo textarea {
+    resize: none;
+    height: 120px;
+    border-radius: 4px;
+}
+
+form ::placeholder {
+    padding-left: 10px;
+}
+
+footer li {
+    list-style: none;
+    margin-left: 16px;
+
+}
+
+footer li a {
+    cursor: pointer;
+}
+
+footer li img {
+    height: 28px;
+    color: var(--Corclarapadrao);
+}
+
+footer {
+    background-color: var(--Cor3);
+    color: var(--Corclarapadrao);
+    padding: 8px;
+    font-family: "Kdam Thmor Pro", sans-serif;
+    font-style: italic;
+    font-size: 14px;
+}
+
+footer > .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+footer ul li a img {
+    box-shadow: none;
+}
+
+.cor-form {
+    background-color:var(--Cor2);
+}
+
+.fale-conosco {
+    display: flex;
+    box-sizing: border-box;
+    justify-content: space-between;
+}
+
+.fale-conosco1 p {
+    font-size: 18px;
+    font-weight: lighter;
+}
+
+.fale-conosco1 h2 {
+    font-weight: 550;
+}
+
+.fale-conosco1 {
+    line-height: 1.2;
+    color: var(--Corclarapadrao);
+}
+
+.area-form {
+    background-color: var(--Corclarapadrao);
+    padding: 14px;
+    border-radius: 8px;
+}
+
+#sobre p {
+    font-size: 18px;
+    text-align: justify;
+}
+
+#carrossel {
+    padding: 0;
+}
+
+#sobre, #destaques, #promo {
+    padding : 120px 0 0 0 ;
+}
+
+#promo {
+    padding-bottom: 100px;
+}
+
+.lista-veiculos h3 {
+    font-family: "Fjalla One", sans-serif;
+    font-size: 20px;
+    
+}
