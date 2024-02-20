@@ -35,13 +35,13 @@ $(document).ready(function() {
     $('.lista-veiculos button').click(function(){
         $('html').animate({
             scrollTop: $('#contato').offset().top
-        },500)
+        },1000)
     });
 
     $('.contato a').click(function(){
         $('html').animate({
             scrollTop: $('#contato').offset().top
-        },500)
+        },1000)
     });
 
     $('.lista-veiculos button').click(function(){
@@ -53,25 +53,25 @@ $(document).ready(function() {
 
         $('html').animate({
             scrollTop: des.offset().top
-        },500)
+        },1000)
     });
 
     $('.promo a').click(function(){
         $('html').animate({
             scrollTop: $('#promo').offset().top
-        },500)
+        },1000)
     });
 
     $('.sobre a').click(function(){
         $('html').animate({
             scrollTop: $('#sobre').offset().top
-        },500)
+        },1000)
     });
 
     $('.destaques a').click(function(){
         $('html').animate({
             scrollTop: $('#destaques').offset().top
-        },500)
+        },1000)
     });
 
 })
